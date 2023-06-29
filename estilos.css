@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #2f2153 !important;
+	color: #1d1d1d;
+}
+
+/* .contenedor {
+	
+	
+
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+*/
+
+#cards{
+
+	margin-top: 35px;
+	margin-left: 30px;
+}
+
+/* .contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}  */
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
+
+/* Header */
+#header1{
+	background-color: #241744;
+}
+ul {
+	background: #241744;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;	
+}
+
+ul li {
+	display: inline;
+	margin-left: 25px;
+	
+}
+a{
+	color: #fff !important;
+}
+a:link { text-decoration:none; } 
+a:visited { text-decoration:none; }
