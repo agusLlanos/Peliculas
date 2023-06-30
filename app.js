@@ -33,20 +33,21 @@ btnAnterior.addEventListener('click', () => {
   }
 })
 
+
 const cargarPeliculas = async () => {
   try {
     const respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=f5f5814324a68653c069e80a54be9406&language=es-ARG&page=${pagina}`);
 
     if (respuesta.status === 200) {
       const datos = await respuesta.json();
-
+      console.log(datos)
       let peliculas = '';
       datos.results.forEach(pelicula => {
         peliculas += `
             <div class="col-md-4 card" id="cards" >
-                <img id="" class="card-img-top" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" onClick="MostrarSinopsis(${pelicula.id})" >
+                <img id="imgPoster" class="" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" onClick="MostrarSinopsis(${pelicula.id})" >
                 <div class="card-body">
-                <h3 class="">${pelicula.title}</h3>
+                <h5 class="card-title">${pelicula.title}</h2>
                 </div>
             </div>                      
             `;
@@ -72,6 +73,8 @@ const cargarPeliculas = async () => {
 
 }
 cargarPeliculas();
+
+
 
 
 

@@ -27,10 +27,27 @@ body {
 */
 
 #cards{
-
-	margin-top: 35px;
-	margin-left: 30px;
+	margin-top: 40px;
+	margin-left: 50px;
+	width: 20rem;
+	height: 30rem;
+	text-align: center;
+	
 }
+#imgPoster{
+	width: 250px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#titulos{
+	font-size: 18rem !important;
+}
+.card{
+	box-shadow:5px 5px 15px rgb(0, 0, 0);
+  }
+  .card:hover{
+	transform: scale(1.15);
+  }
 
 /* .contenedor .pelicula .poster {
 	width: 100%;
@@ -47,6 +64,7 @@ body {
 	justify-content: center;
 	gap: 20px;
 	padding: 10px;
+	margin-top: 100px !important;
 }
 
 .paginacion button {
