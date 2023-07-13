@@ -33,28 +33,24 @@ btnAnterior.addEventListener('click', () => {
   }
 })
 
-
 const cargarPeliculas = async () => {
   try {
     const respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=f5f5814324a68653c069e80a54be9406&language=es-ARG&page=${pagina}`);
-
     if (respuesta.status === 200) {
-      const datos = await respuesta.json();
-      console.log(datos)
+      const datos = await respuesta.json();      
       let peliculas = '';
+      console.log(datos)
       datos.results.forEach(pelicula => {
         peliculas += `
             <div class="col-md-4 card" id="cards" >
                 <img id="imgPoster" class="" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" onClick="MostrarSinopsis(${pelicula.id})" >
                 <div class="card-body">
-                <h5 class="card-title">${pelicula.title}</h2>
+                <h4 class="card-title family">${pelicula.title}</h4>
                 </div>
             </div>                      
             `;
-
       });
       document.getElementById("contenedor").innerHTML = peliculas;
-
 
     } else if (respuesta === 401) {
       console.log('llave incorrecta');
@@ -65,12 +61,10 @@ const cargarPeliculas = async () => {
     } else {
       console.log('hubo un error y no sabemos que paso');
     }
-
   }
   catch (error) {
     console.log(error);
   }
-
 }
 cargarPeliculas();
 

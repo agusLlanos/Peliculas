@@ -1,21 +1,34 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	background-color: #2f2153 !important;
-	color: #1d1d1d;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2f2153 !important;
+  color: #1d1d1d;
 }
 
-/* .contenedor {
-	
-	
+#contenedor {
+  margin-bottom: 200px;
 
 }
+.family {
+  font-family: 'Noto Sans Nag Mundari', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
+#tittleGen {
+  font-size: 35px;
+}
+
+/*
 .contenedor .pelicula {
 	text-align: center;
 }
@@ -26,28 +39,32 @@ body {
 }
 */
 
-#cards{
-	margin-top: 40px;
-	margin-left: 50px;
-	width: 20rem;
-	height: 30rem;
-	text-align: center;
-	
+#cards {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+
 }
-#imgPoster{
-	width: 250px;
-	margin-left: 20px;
-	margin-top: 20px;
+
+#imgPoster {
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
-#titulos{
-	font-size: 18rem !important;
+
+#titulos {
+  font-size: 18rem !important;
 }
-.card{
-	box-shadow:5px 5px 15px rgb(0, 0, 0);
-  }
-  .card:hover{
-	transform: scale(1.15);
-  }
+
+.card {
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
 
 /* .contenedor .pelicula .poster {
 	width: 100%;
@@ -56,55 +73,63 @@ body {
 }  */
 
 .paginacion {
-	position: fixed;
-	bottom: 0;
-	background: #100a1f;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	padding: 10px;
-	margin-top: 100px !important;
+  position: fixed;
+  bottom: 0;
+  background: #100a1f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+
 }
 
 .paginacion button {
-	cursor: pointer;
-	border: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	height: 50px;
-	width: 200px;
-	background: #241744;
-	color: #fff;
-	border-radius: 100px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	transition: .3s ease all;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  background: #241744;
+  color: #fff;
+  border-radius: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  transition: .3s ease all;
 }
 
 .paginacion button:hover {
-	background: #137c32;
+  background: #137c32;
 }
 
 /* Header */
-#header1{
-	background-color: #241744;
+#header1 {
+  background-color: #241744;
 }
+
 ul {
-	background: #241744;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;	
+  background: #241744;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
 ul li {
-	display: inline;
-	margin-left: 25px;
-	
+  display: inline;
+  margin-left: 25px;
+
 }
-a{
-	color: #fff !important;
+
+a {
+  color: #fff !important;
 }
-a:link { text-decoration:none; } 
-a:visited { text-decoration:none; }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
