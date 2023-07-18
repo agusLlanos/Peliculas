@@ -7,11 +7,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #2f2153 !important;
-  color: #1d1d1d;
+  color: #fffefe !important;
 }
 
 #contenedor {
-  margin-bottom: 200px;
+  margin-bottom: 3070px;
 
 }
 .family {
@@ -24,28 +24,16 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#tittleGen {
+#tittleGeneral {
   font-size: 35px;
 }
 
-/*
-.contenedor .pelicula {
-	text-align: center;
-}
-
-.contenedor .pelicula .titulo {
-	font-size: 16px;
-	font-weight: 600;
-}
-*/
-
 #cards {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 50px;
   width: 20rem;
   height: 30rem;
   text-align: center;
-
 }
 
 #imgPoster {
@@ -65,13 +53,6 @@ body {
 .card:hover {
   transform: scale(1.15);
 }
-
-/* .contenedor .pelicula .poster {
-	width: 100%;
-	margin-bottom: 10px;
-	border-radius: 15px;
-}  */
-
 .paginacion {
   position: fixed;
   bottom: 0;
@@ -81,7 +62,19 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 10px;
+}
+#btnBuscar{
+  text-align: center;
+  height: 50px;
+  width: 180px;
+  background: #4b377d;
+  color: #fff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
 
+#btnBuscar:hover {
+  background: #137c32;
 }
 
 .paginacion button {
@@ -119,8 +112,9 @@ ul {
 ul li {
   display: inline;
   margin-left: 25px;
-
+  
 }
+
 
 a {
   color: #fff !important;
@@ -133,3 +127,67 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+
+.contenido{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  
+}
+ .foto{ 
+ position: relative;  
+ overflow: hidden;  /* ocultar objetos fuera del contenedor */
+ border-radius: 6px; 
+ cursor:pointer;  
+ 
+}
+.foto img{   
+  transition: all 500ms ease-out;
+}
+.capa{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  overflow-y: auto;    
+  
+}
+
+.foto:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+
+.foto:hover > .capa h3{
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.capa h3{
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+  
+}
+.capa p{
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+
+
+
+

@@ -29,34 +29,33 @@
 </head>
 
 <body>
-
-  <!-- <div class="row">
-			<div class="col-4" style="border:1px solid red;height: 100px;"></div>
-			<div class="col-4" style="border:1px solid red;height: 100px;"></div>
-			<div class="col-4" style="border:1px solid red;height: 100px;"></div>
-
-		</div> -->
-
   <!-- inicio header -->
   <div class="container-fluid" id="header1">
-    <ul class="text-white pt-5 py-5">
-      <li><a href="index.html" class="">Populares</a></li>
-      <li><a href="drama.html">Drama</a></li>
-      <li><a href="terror.html">Terror</a></li>
-      <li><a href="romantica.html">Romanticas</a></li>
-      <li><a href="comedia.html">Comedia</a></li>
-    </ul>
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="text-white pt-5 py-5 contenedor-listas">
+          <li><a href="#" class="uno">Populares</a></li>
+          <li><a href="#" class="uno">Drama</a></li>
+          <li><a href="#" class="uno">Terror</a></li>
+          <li><a href="#" class="uno">Romanticas</a></li>
+          <li><a href="#" class="uno">Comedia</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mt-4">
+        <div class="input-group">
+          <input type="search" class="form-control rounded" placeholder="Pelicula..." aria-label="Search" aria-describedby="search-addon" />
+          <button type="button" class="btn btn-outline-primary" id="btnBuscar">Buscar</button>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- FIN header -->
 
   <div class="container">
-    <div class="family text-white" id="tittleGen">MÁS POPULARES</div>
-    <div class="row" id="contenedor" style="position: inherit;">
+    <div class="family text-white" id="tittleGeneral">Populares</div>
+    <div class="row contenido" id="contenedor" style="position: inherit;">
     </div>
   </div>
-
-  <!-- <div class="contenedor" id="contenedor">
-	</div> -->
 
   <div class="paginacion">
     <button id="btnAnterior">Anterior</button>
