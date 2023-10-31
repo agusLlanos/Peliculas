@@ -12,8 +12,9 @@ body {
 
 #contenedor {
   margin-bottom: 3070px;
-
+  margin-top: -15px;
 }
+
 .family {
   font-family: 'Noto Sans Nag Mundari', sans-serif;
   font-family: 'Playfair Display', serif;
@@ -26,6 +27,7 @@ body {
 
 #tittleGeneral {
   font-size: 35px;
+  margin-top: 30px;
 }
 
 #cards {
@@ -74,7 +76,7 @@ body {
 }
 
 #btnBuscar:hover {
-  background: #137c32;
+  background: #137c32 !important;
 }
 
 .paginacion button {
@@ -107,12 +109,20 @@ ul {
   background: #241744;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  width: 650px;
 }
 
 ul li {
   display: inline;
-  margin-left: 25px;
-  
+  margin-left: 25px;  
+}
+ul li:hover>a{
+  color:#48df75 !important;
+  cursor: pointer;
+}
+
+#txtBuscar{
+cursor: text;
 }
 
 
@@ -131,12 +141,11 @@ a:visited {
 .contenido{
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;  
   height: 100vh;
-  color: #fff;
-  
+  color: #fff;  
 }
+
  .foto{ 
  position: relative;  
  overflow: hidden;  /* ocultar objetos fuera del contenedor */
@@ -185,6 +194,11 @@ a:visited {
   width: 100%;
   max-width: 220px;
   margin: auto;
+}
+@media screen and (min-width: 992px){
+ ul li{
+  align-items: start !important;
+ }
 }
 
 

@@ -32,18 +32,18 @@
   <!-- inicio header -->
   <div class="container-fluid" id="header1">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8 col-sm-6">
         <ul class="text-white pt-5 py-5 contenedor-listas">
-          <li><a href="#" class="uno">Populares</a></li>
-          <li><a href="#" class="uno">Drama</a></li>
-          <li><a href="#" class="uno">Terror</a></li>
-          <li><a href="#" class="uno">Romanticas</a></li>
-          <li><a href="#" class="uno">Comedia</a></li>
+          <li><a href="#">Populares</a></li>
+          <li><a href="#">Drama</a></li>
+          <li><a href="#">Terror</a></li>
+          <li><a href="#">Romanticas</a></li>
+          <li><a href="#">Comedia</a></li>
         </ul>
       </div>
-      <div class="col-md-4 mt-4">
+      <div class="col-md-4 col-sm-6 mt-5">
         <div class="input-group">
-          <input type="search" class="form-control rounded" placeholder="Pelicula..." aria-label="Search" aria-describedby="search-addon" />
+          <input id="txtBuscar" type="search" class="form-control rounded" placeholder="Pelicula..." aria-label="Search" aria-describedby="search-addon" />
           <button type="button" class="btn btn-outline-primary" id="btnBuscar">Buscar</button>
         </div>
       </div>
@@ -59,7 +59,7 @@
 
   <div class="paginacion">
     <button id="btnAnterior">Anterior</button>
-    <button id="btnSiguiente">Siguiente</button>
+    <button id="btnSiguiente" style="display: block;">Siguiente</button>
   </div>
   <script src="app.js"></script>
 </body>
